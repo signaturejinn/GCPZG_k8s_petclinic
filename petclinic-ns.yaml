@@ -1,0 +1,6 @@
+# kubectl apply -f petclinic-ns.yaml
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: petclinic

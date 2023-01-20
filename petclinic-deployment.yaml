@@ -1,0 +1,58 @@
+# kubectl apply -f petclinic-deploy.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pet-deploy-was
+  namespace: petclinic
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: was
+  template:
+    metadata:
+      name: was-pod
+      labels:
+        app: was
+    spec:
+      containers:
+        - name: was
+          image: asia-northeast3-docker.pkg.dev/project-363006/petclinic-repo/petclinic-was:v1
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pet-deploy-web
+  namespace: petclinic
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      name: web-pod
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: web
+          image: asia-northeast3-docker.pkg.dev/project-363006/petclinic-repo/petclinic-web:v1
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 30
+            periodSeconds: 10
