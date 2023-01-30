@@ -62,6 +62,7 @@ GKE Autopilot 모드 클러스터 서비스를 활용한 컨테이너 기반 인
 ```
 
 </br>
+
 ### 📌 GKE Architecture
 ![image](https://user-images.githubusercontent.com/117608997/215608234-6dd86c23-2997-41a1-af82-07f75595b3d5.png)
 ```
