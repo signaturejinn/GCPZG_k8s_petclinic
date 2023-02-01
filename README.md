@@ -58,7 +58,7 @@
 
 ## 📝 상세 내용 
 ### 📌 Infra Architecture
-![image](https://user-images.githubusercontent.com/117608997/215607589-a7478010-1d29-48f5-a4c5-e20a0bfef7dc.png)
+![image](https://user-images.githubusercontent.com/117608997/215992830-13aa70a8-4acc-4822-94d2-9ac2d671ebbc.png)
 ```
 GKE Autopilot 모드 클러스터 서비스를 활용한 컨테이너 기반 인프라 구축
 ```
