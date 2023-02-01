@@ -75,6 +75,6 @@ Container Registry와 Cloud Build를 통한 이미지 배포 관리
 
 ## ⛓️ 구축 과정
 ### 🔗 Notion Link
-#### - [GCP Kubernetes Project](https://glen-party-257.notion.site/GCP-Kubernetes-Project-9f417ae840834d4490367826b2114c5c)
+#### - [GCP Kubernetes Project](https://glen-party-257.notion.site/GCP-Kubernetes-0b3d3464bfd842949ec87e0356121aa7)
 
 </br>
