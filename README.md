@@ -67,7 +67,7 @@ GKE Autopilot 모드 클러스터 서비스를 활용한 컨테이너 기반 인
 </br>
 
 ### 📌 GKE Architecture
-![image](https://user-images.githubusercontent.com/117608997/215608234-6dd86c23-2997-41a1-af82-07f75595b3d5.png)
+![image](https://user-images.githubusercontent.com/117608997/216548953-da34466b-d9db-4873-9f19-e51abbe2e401.png)
 ```
 GKE Web Pod는 정적인 서비스 제공하고, Was Pod는 DB와 동적인 서비스 제공
 Container Registry와 Cloud Build를 통한 이미지 배포 관리
